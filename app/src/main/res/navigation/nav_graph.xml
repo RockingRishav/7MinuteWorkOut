@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frontFragment">
+
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.a7minutesworkout.ExerciseFragment"
+        android:label="fragment_exercise"
+        tools:layout="@layout/fragment_exercise" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/bmiFragment"
+        android:name="com.example.a7minutesworkout.BmiFragment"
+        android:label="fragment_bmi"
+        tools:layout="@layout/fragment_bmi" >
+    </fragment>
+    <fragment
+        android:id="@+id/frontFragment"
+        android:name="com.example.a7minutesworkout.FrontFragment"
+        android:label="fragment_front"
+        tools:layout="@layout/fragment_front" >
+        <action
+            android:id="@+id/action_frontFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+        <action
+            android:id="@+id/action_frontFragment_to_bmiFragment"
+            app:destination="@id/bmiFragment" />
+    </fragment>
+
+</navigation>

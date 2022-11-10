@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".BMIActivity">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_bmi_activity"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/white"/>
+    tools:context=".BmiFragment">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar_bmi_activity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?android:attr/actionBarSize"-->
+<!--        android:background="@color/white"/>-->
 
     <RadioGroup
         android:id="@+id/rgUnits"
@@ -19,7 +19,7 @@
         android:layout_margin="10dp"
         android:background="@drawable/radio_group_background"
         android:orientation="horizontal"
-        android:layout_below="@+id/toolbar_bmi_activity">
+        >
 
 
         <RadioButton
@@ -60,14 +60,14 @@
         android:hint="WEIGHT (in kg)"
         android:inputType="numberDecimal"
         android:textSize="16sp" />
-         <androidx.appcompat.widget.AppCompatEditText
-             android:id="@+id/etMetricUnitHeight"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:hint="HEIGHT (in cm)"
-             android:inputType="numberDecimal"
-             android:textSize="16sp"
-             android:layout_below="@id/etMetricUnitWeight"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMetricUnitHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HEIGHT (in cm)"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:layout_below="@id/etMetricUnitWeight"/>
     <LinearLayout
         android:id="@+id/USUnitsHeight"
         android:layout_width="match_parent"

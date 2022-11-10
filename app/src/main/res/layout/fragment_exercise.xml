@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExerciseActivity">
+    tools:context=".ExerciseFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarExercise"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/white"
-        android:theme="@style/ToolBarTheme"
-        app:titleTextColor="@color/colorPrimary"
-        app:layout_constraintTop_toTopOf="parent"/>
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarExercise"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?android:attr/actionBarSize"-->
+<!--        android:background="@color/white"-->
+<!--        android:theme="@style/ToolBarTheme"-->
+<!--        app:titleTextColor="@color/colorPrimary"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbarExercise"
+        app:layout_constraintTop_toTopOf="parent"
         >
 
         <ProgressBar
@@ -98,7 +98,7 @@
         android:src="@drawable/jumpingjacks2"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@id/tvExercise"
-        app:layout_constraintTop_toBottomOf="@id/toolbarExercise"/>
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:id="@+id/tvExercise"
         android:layout_width="wrap_content"

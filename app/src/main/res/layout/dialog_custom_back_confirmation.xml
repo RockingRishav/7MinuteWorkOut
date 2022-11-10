@@ -23,7 +23,7 @@
             android:id="@+id/tvQuotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This  will stop the workout. You have made it to this far, are you sure you want to quit?"
+            android:text="This will lose the activity you are currently engaged in.Are you sure You want to Quit?"
             android:textSize="18sp"
             android:textColor="#000000"
             android:layout_marginTop="15dp"
